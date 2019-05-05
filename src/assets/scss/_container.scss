@@ -1,0 +1,22 @@
+/* Estilos de los contenedores*/
+
+@import './_vars';
+@import './_tools';
+
+@mixin card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: color(white);
+  border-radius: $radius;
+  @include box_shadow(2);
+  border-top: 8px solid color(primary);
+  padding: $gutter;
+}
+
+@mixin card-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+

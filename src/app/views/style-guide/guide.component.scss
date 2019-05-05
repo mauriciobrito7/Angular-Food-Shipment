@@ -1,0 +1,135 @@
+@import "~src/assets/scss/_vars";
+/*LAYOUT*/
+.wrapper {
+    width: 80%;
+    margin: 0 auto !important;
+}
+.pattern {
+    margin-bottom: 2em !important;
+    position: relative;
+}
+.pattern-head {
+    margin: 2em 0;
+    font-size: 70%;
+    font-weight: normal;
+    padding: 1em 0;
+    color: #ccc;
+    border-bottom: 1px solid #e0e0e0;
+    
+}
+
+/*COLORS *
+  -----------------------------------------------*/
+  .colors {
+    padding: 0;
+  }
+  .colors li {
+    list-style: none;
+  }
+  .colors li {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    padding-top: 1.5em;
+    border-radius: 500px;
+    vertical-align: middle;
+    position: relative;
+    border: 5px solid white;
+    box-shadow: 0 0 6px color(gray);
+  }
+  .c-black {
+    background-color: color(black);
+    color: color(white);
+  }
+  .c-white {
+    background-color: color(white);
+    color: color(black);
+  }
+  .c-gray {
+    background-color: #ccc;
+    color: color(black);
+  }
+  .c-red {
+    background-color: lighten(color(error), 35%);
+    color: color(error);
+  }
+  .c-primary {
+    background-color: color(primary);
+    color: color(white);
+  }
+  .c-secondary {
+    background-color: color(secondary);
+    color: color(white);
+  }
+  .c-special {
+    background-color: color(special);
+    color: color(black);
+  }
+  .c-success {
+    background-color: lighten(color(success), 35%); 
+    color: color(success);
+    
+  }
+  .c-alert {
+    background-color: lighten(color(alert), 35%);
+    color: color(alert);
+  }
+
+  /*PAGINATION *
+  -----------------------------------------------*/
+  ul.page-numbers {
+    margin: $gutter 0 0 0 !important;
+    padding: 0;
+  }
+  .pagination .page-numbers li {
+    display: inline-block;
+    width: $gutter*1.5;
+    height: $gutter*1.5;
+  }
+  .pagination a,
+  .pagination span {
+    color: color(primary);
+    background: color(white);
+    display: inline-block;
+    text-align: center;
+    border: 1.5px solid color(primary);
+    border-radius: $gutter * 0.2;
+    padding: 0;
+    width: $gutter*1.5;
+    height: $gutter*1.5;
+  }
+  .pagination span.current,
+  .pagination .active_page {
+    background: color(primary);
+    color:color(white);
+    border: 2px solid color(primary);
+  }
+  .pagination a:hover,
+  .page_navigation a:hover {
+    background: darken(color(primary),5%);
+    color: color(white);
+  }
+  /*BACKGROUNDS *
+  -----------------------------------------------*/
+  [class*='bg-'] {
+    padding: 2em;
+  }
+  .bg-primary {
+    background: color(primary);
+    color: color(white);
+  }
+  .bg-secondary {
+    background: color(secondary);
+    color: color(white);
+  }
+  .bg-black {
+    background: color(black);
+    color:  color(white);
+  }
+  .bg-gray {
+    background: color(gray);
+  }
+  
